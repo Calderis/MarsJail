@@ -1,0 +1,29 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1>Sign in</h1>
+		<div class="close" ng-click="closeLogin()">x</div>
+	</ion-header-bar>
+	<ion-content>
+		<form ng-submit="doLogin()">
+			<div class="logo">
+				<i class="icn mars size-64 light"></i>
+				<h3>Mars Jail</h3>
+			</div>
+			<div class="list">
+				<label class="item item-input">
+					<input type="text" ng-model="loginData.username" placeholder="username">
+				</label>
+				<label class="item item-input">
+					<input type="password" ng-model="loginData.password" placeholder="password">
+				</label>
+				<label class="item valid">
+					<button class="btn" type="submit">Log in</button>
+					<a href="">Forgot your password ?</a>
+					
+				</label>
+			</div>
+			
+		</form>
+		<a href="" class="bottom center" ng-click="register()">Create new account</a>
+	</ion-content>
+</ion-modal-view>

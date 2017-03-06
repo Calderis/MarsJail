@@ -1,0 +1,87 @@
+.modal {
+	background-image:url(../img/bg-flou-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:$light;
+	background-blend-mode: multiply;
+	.bar{
+		.bar-header{
+			background:transparent !important;
+		}
+		button{
+			color:$light !important;
+			text-shadow: $slight !important;
+		}
+	}
+	.slide{
+		height:70vh;
+		width:80vw;
+		border:1px solid $light;
+		box-shadow: $sblight;
+		-webkit-box-shadow: $sblight;
+		display: block;
+		cursor: pointer;
+		margin:0px auto;
+		.top{
+			height:50%;
+			padding-top:50px;
+			display: block;
+			background:$gradient-3;
+			background:$gradient-webkit-3;
+			text-align: center;
+			i{
+				margin:auto;
+			}
+		}
+		.content{
+			height:50%;
+			display: block;
+			text-align:center;
+			padding-top:10px;
+			background:$gradient-3;
+			background:$gradient-webkit-3;
+			font-family:'TitilliumText22L-Thin';
+			p{
+				width:66vw;
+				margin:auto;
+			}
+		}
+	}
+	.slider-pager{
+		height:4px;
+		.slider-pager-page{
+			color:$light;
+			i:before{
+				box-shadow: $slight;
+				-webkit-box-shadow: $slight;
+				content:"";
+				height:8px;
+				width:8px;
+				display: block;
+				background-color:$light;
+				border-radius:15px;
+			}
+		}
+	}
+}
+.close{
+	font-size:26px;
+	cursor:pointer;
+	font-family:'TitilliumText22L-Regular';
+	right:20px;
+	padding:10px;
+	text-align: center;
+	position: absolute;
+	display: block;
+    width: 44px;
+    height: 44px;
+	color:$light !important;
+	text-shadow: $slight !important;
+}
+.bar{
+	background:transparent !important;
+}
+.box1, .box2, .box3 {
+   height: 76vh;
+}

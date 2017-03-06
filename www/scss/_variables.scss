@@ -1,0 +1,31 @@
+// Colors
+// -------------------------------
+
+$light:                           #2bede6 !default;
+$green:								#4fe38b !default;
+$red:								#ed3737 !default;
+
+// shadow
+// -------------------------------
+
+$slight:                           0px 0px 3px rgba($light, 0.8) !default;
+$slight2:                           0px 0px 3px rgba($light, 0.5) !default;
+$sblight:							0px 0px 3px 1px $light;
+
+$sgreen:                           0px 0px 3px rgba(79, 227, 139, 0.8) !default;
+$sbgreen:							0px 0px 3px 1px #4fe38b;
+
+$sred:                           0px 0px 3px rgba(237, 55, 55, 0.8) !default;
+$sbred:							0px 0px 3px 1px #ed3737;
+
+// gradient
+// -------------------------------
+
+$gradient-webkit-1:						-webkit-linear-gradient(left,  rgba($light,0.1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+$gradient-1:							linear-gradient(to right,  rgba($light,0.1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/
+
+$gradient-webkit-2:						-webkit-linear-gradient(left,  rgba($light,0.15) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+$gradient-2:							linear-gradient(to right,  rgba($light,0.15) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/
+
+$gradient-webkit-3:						-webkit-linear-gradient(top,  rgba($light,0.1) 0%,rgba($light,0.05) 100%); /* Chrome10-25,Safari5.1-6 */
+$gradient-3:							linear-gradient(to top,  rgba($light,0.1) 0%,rgba($light,0.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/

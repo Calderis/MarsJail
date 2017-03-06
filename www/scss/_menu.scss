@@ -1,0 +1,110 @@
+.menu-open .menu{
+	-webkit-filter:blur(0px);
+	filter:blur(0px);
+}
+.menu{
+	-webkit-filter:blur(5px);
+	filter:blur(5px);
+	background-image: url(../img/bg-flou.jpg);
+	background-color:$light;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	border-right:1px solid rgba($light, 0.4);
+	.menu-left{
+		
+		h1{
+			color:$light;
+			text-shadow: $slight;
+		}
+		a.item-content{
+			color:$light;
+			text-shadow: $slight;
+		}
+	}
+	.has-header{
+		/*top:205px;*/
+		margin-top:125px;
+	}
+	.bar{
+		.title{
+			overflow:visible;
+		}
+		h1{
+			//
+			&:before{
+				content: "";
+				height:90px;
+				width:90px;
+				display: block;
+				margin:10px auto 5px auto;
+				background-image: url(../img/kevin.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color:$light;
+				background-blend-mode: multiply;
+				border-radius: 90px;
+			}
+			&:after{
+				content: "Prisoner n° 254 689";
+				color:white;
+				display: block;
+				margin-top:-23px;
+				font-size: 13px;
+				font-family:'TitilliumText22L-Thin';
+			}
+		}
+		h2{
+			display: block;
+			font-size:16px;
+			text-align:center;
+		}
+	}
+	.logout{
+		margin-left: 105px;
+    	margin-top: 20px;
+	}
+}
+
+/* Header */
+.bar{
+	background:$gradient-2;
+	background:$gradient-webkit-2;
+	border:none;
+	&.bar-stable{
+		border:none;
+		background:none;
+	}
+}
+/* item list */
+.item{
+	border:none;
+	margin:1px 0;
+	font-size:12px;
+	text-transform: uppercase;
+	background:transparent;
+	&.activated{
+		background:none;
+	}
+	a{
+		background:$gradient-1 !important;
+		background:$gradient-webkit-1 !important;
+		text-transform: uppercase;
+		font-family: 'TitilliumText22L-Light';
+		&.active{
+			    font-family: 'TitilliumText22L-Regular';
+		}
+		&.activated{
+			background:none !important;
+		}
+	}
+	.item-content{
+		background:none;
+		&.activated{
+			background:none;
+		}
+	}
+}

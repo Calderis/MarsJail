@@ -1,0 +1,89 @@
+.icn{
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	-webkit-mask-position : center;
+	-webkit-mask-repeat : no-repeat;
+	-webkit-mask-size: contain;
+	display: block;
+	
+	&.size-128{
+		height:128px;
+		width:128px;
+		&.center{
+			top: calc(50% - 96px); /* 50% - 3/4 of icon height */
+		}
+	}
+	&.size-96{
+		height:96px;
+		width:96px;
+		&.center{
+			top: calc(50% - 34px); /* 50% - 3/4 of icon height */
+		}
+	}
+	&.size-64{
+		height:64px;
+		width:64px;
+		&.center{
+			top: calc(50% - 34px); /* 50% - 3/4 of icon height */
+		}
+	}
+	&.size-32{
+		height:32px;
+		width:32px;
+		margin:-36px 9px;
+		&.center{
+			top: calc(50% - 24px); /* 50% - 3/4 of icon height */
+		}
+	}
+	&.size-16{
+		height:16px;
+		width:16px;
+		margin:-36px 9px;
+		&.center{
+			top: calc(50% - 12px); /* 50% - 3/4 of icon height */
+		}
+	}
+	&.light{
+		background-color: $light;
+		box-shadow: $sblight;
+	}
+	&.red{
+		background-color: $red;
+		box-shadow: $sbred;
+	}
+	&.green{
+		background-color:$green;
+		box-shadow: $sbgreen;
+	}
+	
+	
+	&.shopping{ -webkit-mask-image: url(../img/icons/shopping.png);}
+	&.money{ -webkit-mask-image: url(../img/icons/money.png);}
+	&.coin{ -webkit-mask-image: url(../img/icons/coins.png);}
+	&.mars{ -webkit-mask-image: url(../img/icons/geography.png);}
+	&.death{ -webkit-mask-image: url(../img/icons/death.png);}
+	&.smile{ -webkit-mask-image: url(../img/icons/smile.png);}
+	&.map{ -webkit-mask-image: url(../img/icons/pin.png);}
+	&.message{ -webkit-mask-image: url(../img/icons/message.png);}
+	&.plus{ -webkit-mask-image: url(../img/icons/plus.png);}
+	&.power{ -webkit-mask-image: url(../img/icons/power.png);}
+}
+.ion-navicon:before{
+	content:"";
+}
+.button.button-icon.button-clear.ion-navicon{
+	-webkit-mask-image: url(../img/icons/interface.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	-webkit-mask-position : center;
+	-webkit-mask-repeat : no-repeat;
+	-webkit-mask-size: contain;
+	display: block;
+	height:22px;
+	width:22px;
+	background-color: $light;
+	box-shadow: $sblight;
+	margin: 2px 17px;
+}

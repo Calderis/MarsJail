@@ -1,0 +1,21 @@
+<ion-view view-title="{{item.name}}">
+	<!--<ion-content>
+		
+	</ion-content>-->
+	<div class="chat" id="toScroll">
+		<ul class="messages {{keyboard}}">
+			<li ng-repeat="message in messages" class="{{whoIs(message.dest)}}">
+				<span class="bulle">{{message.text}}</span>
+			</li>
+			<li class="empty"></li>
+		</ul>
+	</div>
+	<div class="bar bar-footer message {{keyboard}}">
+	  <div class="bar-message">
+		<input type="text" ng-model="input" placeholder="Type here ..." ng-focus="keyboard = 'open'" ng-blur="keyboard = ''" ng-keyup="valid($event, input)">
+		<a href="" class="green" ng-click="sendMessage(input)">send</a>
+	  </div>
+	</div>
+	
+	
+</ion-view>

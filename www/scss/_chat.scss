@@ -1,0 +1,95 @@
+.bar-footer.message{
+	padding:0;
+	.bar-message{
+		margin-top: -17px;
+		transition-duration: 0.3s;
+		transition-property: all;
+		background-color:rgba($light, 0.1);
+		border-top:1px solid rgba($light,0.05);
+		height:60px;
+		padding:13px 15px;
+		width:100vw;
+		display: block;
+		input{
+			padding:10px 12px;
+			border:1px solid $light;
+			border-radius:3px;
+			float:left;
+			width:75vw;
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.4) 100%);
+			background: linear-gradient(to top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.4) 100%);
+			font-family:'TitilliumText22L-Thin';
+			color:$light !important;
+		}
+		a{
+			font-size:16px;
+			padding:8px 0;
+			float:right;
+			text-transform: uppercase;
+		}
+	}
+}
+.chat{
+	margin-top: 42px;
+    overflow: scroll;
+    height: calc(100vh - 102px);
+    max-height: calc(100vh - 102px);
+	.messages{
+		display: table-cell;
+		vertical-align: bottom;
+		width:100vw;
+		height: calc(100vh - 102px);
+    	max-height: calc(100vh - 102px);
+
+		margin-top: 42px;
+		padding: 0 15px;
+		overflow: auto;
+		white-space: nowrap;
+		&.open{
+			/*height: calc(100vh - 172px);
+			max-height: calc(100vh - 172px);*/
+		}
+		li{
+			margin-bottom:8px;
+			width:100%;
+			float:left;
+
+			&.empty{
+				height:54px;
+			}
+			&.light{
+				text-align: right;
+				.bulle{
+					border:1px solid $light;
+					background: -webkit-linear-gradient(bottom, rgba($light,0.1) 0%, rgba($light,0.05) 100%);
+					background: -o-linear-gradient(bottom, rgba($light,0.1) 0%, rgba($light,0.05) 100%);
+					background: linear-gradient(to top, rgba($light,0.1) 0%, rgba($light,0.05) 100%);
+					float: right;
+				}
+
+			}
+			&.green{
+				text-align: left;
+				.bulle{
+					border:1px solid $green;
+					background: -webkit-linear-gradient(bottom, rgba($green,0.1) 0%, rgba($green,0.05) 100%);
+					background: -o-linear-gradient(bottom, rgba($green,0.1) 0%, rgba($green,0.05) 100%);
+					background: linear-gradient(to top, rgba($green,0.1) 0%, rgba($green,0.05) 100%);
+					float:left;
+				}
+			}
+			.bulle{
+				padding:15px;
+				border-radius:3px;
+				display:inline-table;
+				font-family:'TitilliumText22L-Regular';
+				white-space: normal;
+				max-width: 80vw;
+				display: block;
+				overflow: hidden;
+				word-wrap: break-word;
+				overflow-wrap: break-word;
+			}
+		}
+	}
+}

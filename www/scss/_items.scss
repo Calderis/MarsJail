@@ -1,0 +1,202 @@
+.items{
+	.list{
+		.item-content{
+			.overview{
+				background-color:$light;
+				height:50px;
+				width:50px;
+				border-radius: 50px;
+				overflow: hidden;
+				float:left;
+				display: inline-block;
+				margin-right:15px;
+				img{
+					height:50px;
+					width:50px;
+					margin-right:20px;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					opacity: 0.7;
+					-webkit-filter: grayscale(100%);
+					filter: grayscale(100%);
+				}
+			}
+			h2{
+				margin-top:5px;
+			}
+			p{
+				color:white !important;
+				font-size:13px;
+				font-weight: 100;
+				text-transform:none;
+				font-family:'TitilliumText22L-Thin';
+			}
+			&.activated{
+				background:transparent;
+				border:1px solid rgba($light, 0.3);
+				box-shadow: $sblight;
+			}
+			.owned{
+				display: block;
+				width: 10px;
+				height: 10px;
+				border-radius: 10px;
+				position: absolute;
+				background-color: $light;
+				box-shadow: $sblight;
+				right: 30px;
+				top: 12px;
+			}
+		}
+	}
+}
+.itemSection{
+	.headSlide{
+		background-color:$light;
+		.box{
+			height:210px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-top:1px solid $light;
+			border-bottom:1px solid $light;
+			
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			opacity:.4;
+			
+		}
+		.slider-pager{
+			.slider-pager-page{
+				&.active{
+					border:1px solid $light;
+					border-radius: 12px;
+					height: 12px;
+					width: 12px;
+					display: inline-block;
+					padding: 2px;
+					margin: -2px 0;
+					i:before{
+						content:"";
+						background-color:$light;
+						border-radius:8px;
+						height: 6px;
+						width: 6px;
+						display: block;
+					}
+				}
+				i:before{
+					content:"";
+					background-color:rgba($light, 0.1);
+					border: 1px solid rgba($light, 0.6);
+					border-radius:8px;
+					height:8px;
+					width:8px;
+				}
+			}
+		}
+	}
+	.desc{
+		padding:40px 0 30px 0;
+		h1{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+			font-size:16px;
+			margin:10px 0 25px 0;
+		}
+		.transaction{
+			text-align: center;
+		}
+	}
+	.texte{
+		padding:45px 0;
+		text-align:center;
+		background:$gradient-webkit-3;
+		background:$gradient-3;
+		h1{
+			text-transform: capitalize;
+		}
+		p{
+			color:white!important;
+			width:80vw;
+			margin:auto;
+			font-family:'TitilliumText22L-Thin';
+		}
+	}
+}
+.solde{
+	position:fixed;
+	padding:0px 12px;
+	color:$light !important;
+	border:1px solid $light !important;
+	text-shadow: $slight !important;
+	height:6vh;
+	width:40vw;
+	border:1px solid $light;
+	border-radius:4px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&1+0,0.1+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	background-image: url(../img/black80.png) !important;
+
+	background-size: cover;
+	display: block;
+	right:0;
+	float:right;
+	top:93vh;
+	left:57vw;
+	h1{
+		font-size:32px;
+		margin:0;
+		padding:0;
+	}
+	.adding, .selling{
+		position:absolute;
+		font-size:24px;
+		opacity: 0;
+		margin-left:30px;
+		&:before{
+			content:"$";
+			
+		}
+		animation-iteration-count: 1;
+		animation-duration: 0.7s;
+		animation-timing-function: ease-out;
+	}
+	.adding{
+		margin-top:-70px;
+		animation-name: throwMoney;
+	}
+	.selling{
+		margin-top:-30px;
+		animation-name: addMoney;
+	}
+}
+
+@keyframes throwMoney {
+  from {
+	margin-top: -30px;
+	opacity: 1;
+  }
+  
+  to {
+	margin-top: -70px;
+	opacity: 0;
+  }
+}
+@keyframes addMoney {
+  from {
+	margin-top: -70px;
+	opacity: 1;
+  }
+  
+  to {
+	margin-top: -30px;
+	opacity: 0;
+  }
+}

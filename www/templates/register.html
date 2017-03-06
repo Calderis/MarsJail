@@ -1,0 +1,34 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1>Register</h1>
+		<div class="close" ng-click="closeRegister()">x</div>
+	</ion-header-bar>
+	<ion-content>
+		<form ng-submit="doRegister()">
+			<div class="list spaced">
+				<label class="item item-input">
+					name
+					<input type="text" class="right" ng-model="registerData.username" placeholder="pseudo">
+				</label>
+				<label class="item item-input">
+					email
+					<input type="password" class="right" ng-model="registerData.password" placeholder="mars@jail.com">
+				</label>
+				<label class="item item-input">
+					password
+					<input type="password" class="right" ng-model="registerData.password" placeholder="******">
+				</label>
+				<label class="item item-input">
+					confirm password
+					<input type="password" class="right" ng-model="registerData.password" placeholder="******">
+				</label>
+				<label class="item valid">
+					<button class="btn" type="submit">sign up</button>
+					
+				</label>
+			</div>
+		</form>
+		<a href="" class="center bottom">By signing up you are indicating that you have read
+and agree to the Privacy Policy and Terms of Use.</a>
+	</ion-content>
+</ion-modal-view>

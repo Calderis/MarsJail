@@ -1,0 +1,38 @@
+<ion-view view-title="{{item.name}}">
+ 
+ 	<ion-content scroll="false">
+		<div class="bar bar-header solde">
+		  <h1>$ {{user.credits}}</h1>
+		  <span class="adding" ng-show="add" ng-bind="adding" ></span>
+		  <span class="selling" ng-show="throw" ng-bind="throwing" ></span>
+		</div>
+	</ion-content>
+	
+  <ion-content>
+   <div class="itemSection">
+		<div class="headSlide">
+			<ion-slide-box>
+				<ion-slide ng-repeat="pic in item.pics">
+					<div class = "box box{{$index}}" style="background-image:url(../img/items/{{pic.url}})">
+
+					</div>
+				</ion-slide>
+
+			</ion-slide-box>
+		</div>
+		<div class="desc">
+			<h1>{{item.punchline}}</h1>
+			<h2>{{item.name}} - {{item.price}} credits</h2>
+			<div class="transaction">
+				<button class="round sell light" ng-show="item.owned" ng-click="sell({{item.id}}, {{item.price}})"><i class="light icn money size-16"></i></button>
+				<button class="round buy green" ng-show="!item.owned" ng-click="buy({{item.id}}, {{item.price}})"><i class="green icn shopping size-16"></i></button>
+			</div>
+		</div>
+		<div class="texte">
+		<h1>{{item.desc.title}}</h1>
+		<p>{{item.desc.text}}</p>
+	</div>
+   </div>
+  </ion-content>
+
+</ion-view>

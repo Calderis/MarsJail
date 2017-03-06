@@ -1,0 +1,20 @@
+<ion-view view-title="Items">
+  <div class="items">
+  	<ion-content>
+		<ion-list>
+		  <ion-item ng-repeat="item in items" href="#/app/items/{{item.id}}">
+			<div class="overview">
+				<img src="../img/items/{{item.pics[0].url}}">
+			</div>
+			<h2>{{item.name}}  ({{item.price}} $)</h2>
+			<p>{{item.punchline}}</p>
+			<span class="owned" ng-show="item.owned"></span>
+		  </ion-item>
+		</ion-list>
+		<div class="list">
+
+
+		</div>
+	  </ion-content>
+  </div>
+</ion-view>

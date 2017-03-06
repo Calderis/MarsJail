@@ -1,0 +1,72 @@
+<ion-view view-title="Profile">
+<ion-content>
+	<div class="profil">
+		<section class="main">
+			<div class="top">
+				<i class="icn light mars size-32"></i>
+				<h1>{{user.name}}</h1>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li>
+						<a href="#/app/chat/1"><button class="round light" ><i class="icn size-16 message light"></i></button></a>
+					</li>
+					<li>
+						<div class="pict"></div>
+					</li>
+					<li><button class="round green"><i class="icn size-16 plus green"></i></button></li>
+				</ul>
+				<p class="description">You've been condamned after being catched while licking subway's bar.</p>
+				<div class="position">
+					<a href="">
+						<i class="icn size-16 map light"></i>
+						Base
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="category">
+			<ul class="part-2 button-mode">
+				<li class="{{statistic}}" ng-click="activate(1)"><a href="">Statistics</a></li>
+				<li class="{{activity}}" ng-click="activate(2)"><a href="">Activity</a></li>
+			</ul>
+		</section>
+		<section class="statistique" ng-show="statistic">
+			<ul class="part-3">
+				<li class="active">
+					<h2>Followers</h2>
+					<p>201</p>
+				</li>
+				<li>
+					<h2>followings</h2>
+					<p>201</p>
+				</li>
+				<li>
+					<h2>comments</h2>
+					<p>201</p>
+				</li>
+			</ul>
+		</section>
+		<section class="activity" ng-show="statistic">
+			<ul>
+				<li>
+					<button class="round green">56%</button>
+					<h3 class="green">Trading</h3>
+				</li>
+				<li>
+					<button class="round light">12%</button>
+					<h3 class="light">Mining</h3>
+				</li>
+				<li>
+					<button class="round light">88%</button>
+					<h3 class="light">Bouties</h3>
+				</li>
+				<li>
+					<button class="round red">27%</button>
+					<h3 class="red">Explore</h3>
+				</li>
+			</ul>
+		</section>
+	</div>
+</ion-content>
+</ion-view>

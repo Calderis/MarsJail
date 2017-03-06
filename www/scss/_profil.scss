@@ -1,0 +1,105 @@
+.profil{
+	text-align: center;
+	.top{
+		background-image: url(../img/satellite.jpg);
+		background-color:$light;
+		background-blend-mode: multiply;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		
+		background-size: cover;
+		border-top:1px solid rgba($light, 0.1);
+		border-bottom:1px solid rgba($light, 0.1);
+		padding:24px 0 64px 0;
+		i{
+			margin:auto !important;
+		}
+		h1{
+			font-size:24px;
+			margin: 12px 0 0 0;
+			&:after{
+				content: "Prisoner n° 254 689";
+				color:white;
+				display: block;
+				font-size: 13px;
+				font-family:'TitilliumText22L-Thin';
+			}
+		}
+	}
+	.bottom{
+		background:$gradient-webkit-1;
+		background:$gradient-1;
+		padding:0 0 25px 0;
+		ul{
+			margin:0 auto;
+			width: 252px;
+			height:50px;
+			display: block;
+			li{
+				display: inline-block;
+				margin-top:-26px;
+				float:left;
+				.pict{
+					display: block;
+					height:100px;
+					width: 100px;
+					border-radius: 100px;
+					border:1px solid $light;
+					background-image: url(../img/kevin.png);
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-color:$light;
+					background-blend-mode: multiply;
+				}
+				&:nth-child(2){
+					margin-top:-50px;
+				}
+			}
+		}
+		.description{
+			display: block;
+			margin:0;
+			padding: 20px 0 10px;
+			text-align: center;
+			color:white !important;
+			text-shadow: $slight2 !important;
+			width:80vw;
+			margin:auto;
+		}
+		.position{
+			display:block;
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				font-family:'TitilliumText22L-Thin';
+				text-shadow: $slight2 !important;
+				i{
+					margin: -3px 3px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.activity{
+		padding:30px 0;
+		ul{
+			margin:0 auto;
+			width: 100vw;
+			height:50px;
+			display: block;
+			text-align: center;
+			li{
+				display: inline-block;
+				h3{
+					font-family:'TitilliumText22L-Thin';
+					text-transform: uppercase;
+					font-size:11px;
+					text-align: center;
+					margin:12px 0 0 0;
+				}
+			}
+		}
+	}
+}
